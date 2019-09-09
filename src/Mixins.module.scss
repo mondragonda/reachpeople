@@ -1,0 +1,15 @@
+@import '../node_modules/bulma/sass/utilities/initial-variables';
+
+@mixin fullhd {
+	@if $fullhd-enabled {
+		@media screen and (min-width: $fullhd) and (max-width: 1500px) {
+			@content;
+		}
+	}
+}
+
+@mixin bigscreen {
+	@media screen and (min-width: 1500px) {
+		@content;
+	}
+}
